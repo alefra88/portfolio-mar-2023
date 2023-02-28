@@ -57,6 +57,8 @@
   --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
   --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
   --step-5: clamp(2.8rem, calc(2.45rem + 1.77vw), 3.82rem);
+  --max-width: 1200px;
+  --header-height: 4rem;
 
   /* spaces */
   --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
@@ -346,12 +348,47 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
+  max-width: var(--max-width);
 }
 
 .none {
   display: none;
 }
+/* 
+==========================================================================
+                        C O M P O N E N T S
+==========================================================================
+*/
+.menu-btn {
+  background-color: var(--clr-grey-8);
+  outline: thin solid var(--clr-primary-1);
+  border: 0;
+  cursor: pointer;
+}
 
+.menu-btn svg {
+  fill: var(--clr-primary-3);
+}
+
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: var(--header-height);
+  width: 100%;
+  background-color: var(--clr-grey-1);
+  display: flex;
+  flex-direction: column;
+}
+.menu a{
+padding: 1rem;
+font-size: 1.5rem;
+font-weight: bold;
+text-align: center;
+text-decoration: none;
+color: var(--clr-primary-4);
+}
+
+.menu a:hover
 /* 
 ==========================================================================
                         S I T E   S T Y L E S
@@ -374,8 +411,8 @@ p {
   align-items: center;
 }
 
-.logo a{
-  color:var(--clr-primary-1);
+.logo a {
+  color: var(--clr-primary-1);
   font-weight: bold;
   font-size: var(--step-3);
   text-decoration: none;

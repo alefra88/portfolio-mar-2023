@@ -24,8 +24,42 @@ img {
 */
 
 :root {
+  /*color*/
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(160, 23%, 15%);
+  --clr-primary-2: hsl(160, 56%, 20%);
+  --clr-primary-3: hsl(160, 72%, 37%);
+  --clr-primary-4: hsl(160, 93%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(160, 53%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(160, 89%, 70%);
+  --clr-primary-7: hsl(160, 90%, 76%);
+  --clr-primary-8: hsl(160, 86%, 81%);
+  --clr-primary-9: hsl(160, 90%, 88%);
+  --clr-primary-10: hsl(160, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(219, 61%, 16%);
+  --clr-grey-2: hsl(219, 39%, 23%);
+  --clr-grey-3: hsl(219, 34%, 30%);
+  --clr-grey-4: hsl(219, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(219, 22%, 49%);
+  --clr-grey-6: hsl(219, 23%, 60%);
+  --clr-grey-7: hsl(219, 27%, 70%);
+  --clr-grey-8: hsl(219, 31%, 80%);
+  --clr-grey-9: hsl(219, 33%, 89%);
+  --clr-grey-10: hsl(219, 36%, 96%);
+  --clr-white: #fff;
+  --clr-yellow-thid: hsl(39, 100%, 50%);
+  --clr-yellow-light: hsl(39, 61%, 80%);
+  --clr-blue-fourth: hsl(208, 74%, 60%);
+  --clr-alpha: hsla(0, 0%, 100%, 0.5);
+  --clr-black-dark: hsla(0, 10%, 10%, 0.5);
+  --clr-black: hsl(0,0%,0);
   /* font */
   --font-prim--1: "Gajraj One", sans-serif;
+  /* font size*/
   --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem);
   --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
   --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
@@ -91,7 +125,6 @@ img {
     transform: translate(4px, 0);
   }
 }
-
 
 /* 
 ==========================================================================

@@ -1,22 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap");
-/* 
+/*
 ==========================================================================
-                        R E S E T
+                              F O N T 
 ==========================================================================
 */
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
-img {
-  width: 100%;
-  height: auto;
-}
 /* 
 ==========================================================================
                         C U S T O M    P R O P E R T I E S
@@ -26,7 +14,7 @@ img {
 :root {
   /*color*/
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(160, 23%, 15%);
+  --clr-primary-1: hsl(160, 23%, 9%);
   --clr-primary-2: hsl(160, 56%, 20%);
   --clr-primary-3: hsl(160, 72%, 37%);
   --clr-primary-4: hsl(160, 93%, 48%);
@@ -51,14 +39,15 @@ img {
   --clr-grey-9: hsl(219, 33%, 89%);
   --clr-grey-10: hsl(219, 36%, 96%);
   --clr-white: #fff;
+  /* contrast colors*/
   --clr-yellow-thid: hsl(39, 100%, 50%);
   --clr-yellow-light: hsl(39, 61%, 80%);
   --clr-blue-fourth: hsl(208, 74%, 60%);
   --clr-alpha: hsla(0, 0%, 100%, 0.5);
   --clr-black-dark: hsla(0, 10%, 10%, 0.5);
-  --clr-black: hsl(0,0%,0);
+  --clr-black: hsl(0, 0%, 0);
   /* font */
-  --font-prim--1: "Gajraj One", sans-serif;
+  --font-prim--1: "Fira Code", monospace;
   /* font size*/
   --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem);
   --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
@@ -128,6 +117,52 @@ img {
 
 /* 
 ==========================================================================
+                        R E S E T
+==========================================================================
+*/
+
+html {
+  font-family: var(--font-prim--1);
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  margin: 0;
+  font-size: var(--step-5);
+}
+h2 {
+  margin: 0;
+  font-size: var(--step-4);
+}
+h3 {
+  margin: 0;
+  font-size: var(--step-3);
+}
+h4 {
+  margin: 0;
+  font-size: var(--step-2);
+}
+h5 {
+  margin: 0;
+  font-size: var(--step-5);
+}
+h6 {
+  margin: 0;
+  font-size: var(--step--1);
+}
+/* 
+==========================================================================
                         G R I D     C L A S S 
 ==========================================================================
 */
@@ -147,10 +182,7 @@ img {
                         G L O B A L      C L A S S
 ==========================================================================
 */
-/*font*/
-.font-prim--1 {
-  font-family: var(--font-prim--1);
-}
+
 /*font size*/
 .step--2 {
   font-size: var(--step--2);

@@ -16,7 +16,7 @@
   --text-color: #222;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
-  --font: "Raleway", sans-serif;
+  --font: "Fira Code", sans-serif;
   --max-width: 1200px;
   --header-height: 4rem;
   --border-radius:.5rem;
@@ -691,6 +691,7 @@ p {
   font-weight: bold;
   font-size: 2rem;
   text-decoration: none;
+  letter-spacing: 1rem;
 }
 
 .portfolio-card {

@@ -19,7 +19,7 @@
   --font: "Fira Code", sans-serif;
   --max-width: 1200px;
   --header-height: 4rem;
-  --border-radius:.5rem;
+  --border-radius: 0.5rem;
   /* font size*/
   --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem);
   --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
@@ -378,12 +378,10 @@ p {
     flex-direction: row;
     opacity: 1;
     pointer-events: auto;
-    
   }
 
   .menu a {
     padding: 0 1rem;
-    
   }
 
   .menu a:last-child {
@@ -441,7 +439,7 @@ p {
 .skill-items {
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .skill-bar,
@@ -481,7 +479,6 @@ p {
 .skill-bar--50::after {
   --skill-bar-len: 50%;
   background-color: orange;
-
 }
 .skill-bar--40::after {
   --skill-bar-len: 40%;
@@ -490,14 +487,10 @@ p {
 .skill-bar--30::after {
   --skill-bar-len: 30%;
   background-color: goldenrod;
-  
-
 }
 .skill-bar--20::after {
   --skill-bar-len: 20%;
   background-color: goldenrod;
-  
-
 }
 .skill-bar--10::after {
   --skill-bar-len: 10%;
@@ -509,8 +502,6 @@ p {
     transform: translateX(var(--skill-bar-len));
   }
 }
-
-
 
 /* ********** Utilities ********** */
 .shake {
@@ -578,8 +569,8 @@ p {
   /* max-width: var(--max-width); */
 }
 .gray-scale {
-  filter: grayscale(.4);
-  border-radius: .5rem;
+  filter: grayscale(0.4);
+  border-radius: 0.5rem;
 }
 
 .none {
@@ -869,8 +860,7 @@ p {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
-  border:1rem;
-  
+  border: 1rem;
 }
 
 .btn {
@@ -880,7 +870,7 @@ p {
   height: 80px;
   border-radius: 30px;
   background: none;
-  border:0; 
+  border: 0;
   font-size: 40px;
   color: white;
   text-decoration: none;

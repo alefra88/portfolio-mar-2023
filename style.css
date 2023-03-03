@@ -181,7 +181,7 @@ p {
 }
 
 .carousel label {
-  border: medium solid var(--gray-dark-color);
+  border: medium solid var(--text-color);
   border-radius: 50%;
   margin: 0 0.25rem;
   display: inline-block;

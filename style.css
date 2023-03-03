@@ -12,9 +12,9 @@
   --gray-dark-color: #666;
   --black-color: #000;
   --link-color: #509ee3;
-  --title-color: #333;
+  --title-color: #121;
   --text-color: #222;
-  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --white-alpha-color: rgba(255, 255, 255, 0.2);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
   --font: "Fira Code", sans-serif;
   --max-width: 1200px;

@@ -74,8 +74,8 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
 
+}
 *,
 *::after,
 *::before {
@@ -851,7 +851,17 @@ p {
     grid-column: span 3;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 1020px) {
+  #canvas {
 
+    width: 50%;
+  }
+  
+  #textInput {
+    width: 10%;
+    margin-top: 10px;
+  }
+}
 /*btn*/
 .btn-curr {
   position: absolute;
@@ -914,3 +924,28 @@ p {
   }
 }
 
+/* n e w   t i t l e */
+  /* canvas {
+  display: block;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: "Rubik Iso", cursive;
+  font-size: var(--step-5);
+  background: transparent;
+} */
+/* input {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 20px);
+  background-color: none;
+}    */
+input {
+  display: none;
+  width: 10%;
+}
